@@ -8,7 +8,8 @@
 <li>
     {{i+1}}
     <img [src] = "book.image" width = "100" alt = {{book.name}}>
-    {{book.name}} by {{book.author}} 
+    {{book.name | titlecase}} by {{book.author}} 
+    <p>{{book.amount | currency:'MYR'}}</p>
 </li>
 </ng-container>
 </ul>
