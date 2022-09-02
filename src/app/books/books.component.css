@@ -8,4 +8,5 @@ ul > li {
     text-overflow: elipsis;
     width: 25%;
     text-align:center;
+    cursor: pointer;
 }
