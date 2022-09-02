@@ -6,10 +6,10 @@
 <ul *ngIf="isShowing">
 <ng-container *ngFor="let book of books; let i=index">
 <li>
-    {{i+1}}
-    <img [src] = "book.image" width = "100" alt = {{book.name}}>
-    {{book.name | titlecase}} by {{book.author}} 
-    <p>{{book.amount | currency:'MYR'}}</p>
+    <p class="index">{{i+1}}</p>
+    <p><img [src] = "book.image" width = "100" alt = {{book.name}}></p>
+    <p class="title">{{book.name | titlecase}} by {{book.author}} </p>
+    <p class="currency">{{book.amount | currency:'MYR'}}</p>
 </li>
 </ng-container>
 </ul>
