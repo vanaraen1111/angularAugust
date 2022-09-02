@@ -7,7 +7,7 @@ import { Book } from '../types/Book';
   styleUrls: ['./books.component.css']
 })
 export class BooksComponent implements OnInit {
-
+  cart: Book[] = []
   isShowing: boolean =  true;
   books: Book[] = [{
     name:  'Clean Code',
